@@ -15,7 +15,7 @@ I'd recommend using this loadstring script incase an update is pushed out for th
 -- // due to high ping making autopower useless sometimes, ive added a toggle for it if you'd like to disable it
 getgenv().AutoPower = true -- // change to false to disable automatic power changing
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/6ce/Streetball-Silent-Aim/main/SilentAimbot.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/6ce/Roblox-Streetball-Silent-Aim/refs/heads/main/SilentAimbot.lua"))()
 ```
 
 # Footing
