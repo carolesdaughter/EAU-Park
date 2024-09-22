@@ -33,18 +33,6 @@ local ChangingPower = false
 local Shooting = false
 local Arc = "75"
 
-local Function do
-    for _, Obj in next, getgc(true) do
-        if type(Obj) == "function" then
-            local Info = getinfo(Obj)
-            
-            if Info.source:find("Tracker") and Info.numparams == 3 then
-                Function = Obj
-            end
-        end
-    end
-end
-
 local Goals = {} do
     for _, Obj in next, workspace:GetDescendants() do
 	    if Obj:IsA("BasePart") and Obj.Name == "Lol" and Obj.Parent.Name == "Rim" then
@@ -134,13 +122,7 @@ function ShootBall()
 		SpawnPosition = Player.Character.PrimaryPart.Position + Unit * 4
 	end
 	
-	setupvalue(Function, 1, true)
-    
     ShootEvent:FireServer(Vector, SpawnPosition, "\240\159\148\165\240\159\148\165")
-    
-    task.wait(0.09)
-    setupvalue(Function, 1, false)
-    
     Shooting = false
 end
 
@@ -249,23 +231,3 @@ Player.CharacterAdded:Connect(function(Character)
 	getgenv().HandleJump = Character:WaitForChild("Humanoid").Jumping:Connect(HandleJump)
 	getgenv().HandleRender = RunService.Stepped:Connect(HandleRender)
 end)
-
-if not getgenv().Hooked then
-    getgenv().Hooked = true
-    
-    local Hook do
-        Hook = hookmetamethod(game, "__index", newcclosure(function(Self, Index)
-            
-            if Self == Mouse and Index == "Hit" and Shooting == true then
-                local Goal = GetNearestGoal()
-                local Vector = GetNewVector(Goal)
-                
-                if Goal ~= nil and Vector ~= nil then
-                    return CFrame.new(Vector)
-                end
-            end
-            
-            return Hook(Self, Index)
-        end))
-    end
-end
