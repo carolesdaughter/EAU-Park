@@ -20,10 +20,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/6ce/Roblox-Streetball
 
 # Footing
 
-75 - https://ibb.co/tLQGGJq
-
-80 - https://ibb.co/MSLK3fk
-
-85 - https://ibb.co/LnSKJND
-
-90 - https://ibb.co/GTg7p3g
+- 75 - https://ibb.co/tLQGGJq
+- 80 - https://ibb.co/MSLK3fk
+- 85 - https://ibb.co/LnSKJND
+- 90 - https://ibb.co/GTg7p3g
