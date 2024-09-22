@@ -4,7 +4,9 @@ Originally when I first made this, I announced the release of a GUI for Streetba
 
 # Usage
 
-Just jump when you're in footing, will automatically change power for you, and it "spoofs" a click (just shows someone who's PVEyeing you that you clicked)
+Just jump when you're in footing, will automatically change power for you (if it is enabled)
+
+Moderators can view your screen and they will be able to see whether or not you're clicking and aiming correctly. I cannot fix this due to Solara being an external executor.
 
 Requires Synapse, Script-Ware (Windows & Mac most likely), Fluxus, or KRNL
 
