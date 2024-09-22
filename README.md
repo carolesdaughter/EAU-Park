@@ -1,9 +1,7 @@
-# Streetball-Silent-Aim:
-
-Originally when I first made this, I announced the release of a GUI for Streetball, due to the owner of the server I announced it in eventually deciding to start selling already-released scripts, I've decided to distance myself from that & the GUI will most likely not be made, this repository will be edited if it is made.
+# Streetball Silent Aim
+A silent aim for the game Streetball on Roblox. I updated the script recently for Solara support, but if it is fully patched, I will not update it again.
 
 # Usage
-
 Just jump when you're in footing, will automatically change power for you (if it is enabled)
 
 Moderators can view your screen and they will be able to see whether or not you're clicking and aiming correctly. I cannot fix this due to Solara being an external executor.
