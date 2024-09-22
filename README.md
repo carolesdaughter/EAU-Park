@@ -7,7 +7,7 @@ Just jump when you're in footing, will automatically change power for you (if it
 Moderators can view your screen and they will be able to see whether or not you're clicking and aiming correctly. I cannot fix this due to Solara being an external executor.
 
 I'd recommend using this loadstring script incase an update is pushed out for the aimbot:
-```
+```lua
 -- // due to high ping making autopower useless sometimes, ive added a toggle for it if you'd like to disable it
 getgenv().AutoPower = true -- // change to false to disable automatic power changing
 
