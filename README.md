@@ -6,8 +6,6 @@ Just jump when you're in footing, will automatically change power for you (if it
 
 Moderators can view your screen and they will be able to see whether or not you're clicking and aiming correctly. I cannot fix this due to Solara being an external executor.
 
-Requires Synapse, Script-Ware (Windows & Mac most likely), Fluxus, or KRNL
-
 I'd recommend using this loadstring script incase an update is pushed out for the aimbot:
 ```
 -- // due to high ping making autopower useless sometimes, ive added a toggle for it if you'd like to disable it
